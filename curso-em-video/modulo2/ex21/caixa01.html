@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de caixas</title>
+    <style>
+        h1{
+            padding: 10px;
+            border: 5px solid grey;
+            width: 300px;
+            height: 300px;
+            background-color: azure;
+            margin: auto;
+
+            outline: 2px dashed slateblue;
+        }
+
+        a{
+            padding: 10px;
+            border: 5px solid red;
+        }
+
+        .block-converted{
+                display: block;
+                
+        }
+        
+        .block-converted:hover{
+            background-color: darkgrey;
+            color: rgb(5, 3, 19);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-level</h1>
+    <p>a tag p tambem é do  tipo box-level <a href="#">Links são exemplos do tipo inline-level</a> Vamos ver como tudo isso funciona</p>
+
+    <a href="#" class="block-converted"> Link convertidode inline para block</a>
+</body>
+</html>

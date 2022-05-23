@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de videos</title>
+</head>
+<body>
+    <h1>Minha Pagina Usando a tag de videos</h1>
+    <p>Abaixo estara o video que pretende ser executado em multiplos navegadores</p>
+ 
+    <video  loop width= "500" poster = "image/capa.png" controls >
+        <source src="midia/v-rend.mp4" type="video/mp4">
+        <source src="midia/v2.ogv" type="video/ogv">
+        <p>seu navegador não tem compatibilidade</p>
+        <!-- Por problemas no conversor de video ficou faltando o arquivo m4v e o webm -->
+    </video>
+
+
+    <h1>Incorporando Videos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Incorporando Videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/5737848?h=64c4fb912b&autoplay=1&color=c9ff23&portrait=0" width="560" height="448" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

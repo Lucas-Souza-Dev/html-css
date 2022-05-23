@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(95, 95, 95);
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: rgb(169, 215, 255);
+            text-decoration:underline;
+        }
+        /*a:visited{
+            color: rgb(58, 58, 58);
+        } */
+        .mostvisited::before{
+            content: '🔥' ;
+        }
+
+        .lessvisited::after{
+            content: '❄️';
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Personalizando Links</h1>
+    <p>Clique para acessar</p>
+
+    <ul>
+        <li class="mostvisited"><a href="https://github.com/Lucas-Souza-Dev" target="_blank">Github</a></li>
+        <li class="lessvisited"><a href="https://www.linkedin.com/in/lucas-pereira-102764196/" target="_blank">LinkedIn</a></li>
+    </ul>
+    
+</body>
+</html>

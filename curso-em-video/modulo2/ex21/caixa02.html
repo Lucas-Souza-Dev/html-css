@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+        body{
+            background-color: #B8A7A5;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+
+        }
+         header{
+             background-color: white;
+            padding: 10px;
+            margin: 10px;
+
+         }
+         nav{
+             background-color: #746c6b;
+             box-shadow: 3px 4px 5px 1px rgba(0, 0, 0, 0.493);
+             padding: 5px;
+         }
+         nav > a{
+             text-decoration: none;
+             color: white;
+             font-weight: bold;
+             margin-right: 30px;
+         }
+
+         nav > a:hover{
+             color: #FFC5BF;
+             text-decoration: underline;
+         }
+
+         main{
+             margin: 10px;
+             background-color: white;
+             padding: 5px;
+             box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.377);
+             border-radius: 10px 0;
+         }
+
+         article{
+             background-color: #968a897c;
+             padding: 10px;
+         }
+
+         footer{
+             background-color: #2f382f;
+             color:#8CFF96;
+             text-align: center;
+             padding: 10px;
+             margin: 0;
+         }
+
+         footer > p {
+             margin: 0;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Meu trabalho</a>
+            <a href="#">Sobre mim</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Contatos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="assuntos">
+            Tecnologias
+        </section>
+        <section class="noticias">
+            <article>
+                <h2>Tesla Brasil</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore harum eaque quo doloremque adipisci veniam earum praesentium rem cupiditate, iste quidem architecto alias. Fuga hic a omnis? Asperiores, magni animi.
+                </p>
+                <aside>
+                    Desenvolvido por Elon Musk.
+                </aside>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Lucas</p>
+    </footer>
+</body>
+</html>
