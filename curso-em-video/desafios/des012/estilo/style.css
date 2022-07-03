@@ -62,7 +62,7 @@ section.imagem {
     color: white; 
 }
 section.imagem > p{
-    display: inline-block;
+    display: inline-block;/* deixa a section do tamanho da caixa do texto */
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.356);
 }
