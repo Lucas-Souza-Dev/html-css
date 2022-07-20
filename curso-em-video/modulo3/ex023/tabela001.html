@@ -11,18 +11,16 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
+            height: 300px;
             width: 300px;
             border-collapse: collapse;
         }
         td{
             border: 1px solid rgb(70, 167, 231);
             padding: 8px;
-        }
-        td.select{
-            background-color: rgb(255, 255, 118);
-        }
-        tr.select-line{
-            background-color: grey;
+            text-align: center;/* Alinhamento Horizontal */
+            vertical-align: middle;/* Alinhamento Vertical */
+
         }
     </style>
 </head>
@@ -35,27 +33,20 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="select-line">
+        <tr>
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
         <tr>
             <td>A3</td>
-            <td class="select">B3</td>
+            <td>B3</td>
             <td>C3</td>
         </tr>
         <tr>
             <td>A4</td>
             <td>B4</td>
             <td>C4</td>
-        </tr>
-        <tr>
-            <td>A5</td>
-            <td>B5</td>
-        </tr>
-        <tr>
-            <td>A6</td>
         </tr>
     </table>
 </body>
