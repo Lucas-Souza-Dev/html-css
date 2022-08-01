@@ -9,19 +9,29 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray ;
+        }
         table{
             height: 500px;
             width: 500px;
             border-collapse: collapse;
         }
         thead, tfoot{
-            background-color:gray;
+            background-color:rgb(68, 68, 68);
             color:white;
         }
         td,th{
             border: 1px solid black;
             ;
             padding: 10px;
+        }
+
+        tbody > tr:nth-child(odd){/* odd : 2n -1 ou even : 2n  utilização para tabelas com muitas colunas*/
+            background-color: lightgrey;
         }
         .num{
             text-align: right;
@@ -30,6 +40,7 @@
 </head>
 <body>
     <!-- Estrutura semantica para tabelas grandes
+        <caption> --- Titulo da tabela
         <thead>
             th, td, tr
         <tbody>
@@ -39,12 +50,14 @@
     -->
     <h1>Manipulando tabelas Grandes</h1>
 
+    
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>
+            <th scope="col">
                 Estado
             </th>
-            <th>
+            <th scope="col" style="width: 50px;">
                 população
             </th>
         </thead>
@@ -160,8 +173,8 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Quantidade total</th>
-            <td class="num"><strong>165.365.796</strong></td>
+            <th scope="row">Quantidade total</th>
+            <td class="num"><strong>210.147.125</strong></td>
         </tfoot>
     </table>
     
