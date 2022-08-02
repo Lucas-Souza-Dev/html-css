@@ -9,31 +9,37 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
         caption {
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
             background-color: lightgray ;
         }
-        table{
-            height: 500px;
-            width: 500px;
-            border-collapse: collapse;
-        }
         thead, tfoot{
             background-color:rgb(68, 68, 68);
             color:white;
         }
-        td,th{
-            border: 1px solid black;
-            ;
-            padding: 10px;
+        thead > tr > th {/* deixa o titulo grudado em alguns navegadores */
+            position:sticky;
+            top:-1;
+            background-color: rgb(68, 68, 68);
         }
 
         tbody > tr:nth-child(odd){/* odd : 2n -1 ou even : 2n  utilização para tabelas com muitas colunas*/
             background-color: lightgrey;
         }
-        .num{
+        td.num{
             text-align: right;
         }
     </style>
@@ -54,12 +60,14 @@
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
-            <th scope="col">
-                Estado
-            </th>
-            <th scope="col" style="width: 50px;">
-                população
-            </th>
+            <tr>
+                <th scope="col">
+                    Estado
+                </th>
+                <th scope="col" style="width: 50px;">
+                    População
+                </th>
+            </tr>
         </thead>
 
         <tbody>
