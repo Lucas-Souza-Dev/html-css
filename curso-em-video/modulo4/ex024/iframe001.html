@@ -5,24 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo de Ifrme</title>
-</head>
-<body>
+    <style>
+        /* O Css de folha predomina sobre o de linha no iFrame */
+        iframe{
+            height: 500px;
+            width: 500px;
+        }
+        
+    </style>
+    </head>
     <h1>Testando o uso de iframe</h1>
 
     <p>Acesse o site do 
 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="https://www.cursoemvideo.com" frameborder="0">
+            <a href="https://www.cursoemvideo.com"> Curso em Video</a>
+        </iframe>
 
         Para Aprender a Programar
     </p>
 
-    <p>
-        O site do 
-
-        <iframe src="https://www.google.com.br" frameborder="0"></iframe>
-        Também é muito legal
-        <!-- Alguns sites tem proteção contra o uso de sites terceiros por meio do iframe que é o caso do Google-->
-    </p>
+ <p>
+    Acesse Tambem 
+        <iframe  width="400px"src="https://github.com/Lucas-Souza-Dev" frameborder="0">
+            O meu <a href="https://github.com/Lucas-Souza-Dev" target="_blank" rel="noopener noreferrer">Github</a>
+        </iframe>
+ </p>
  
     
 </body>
