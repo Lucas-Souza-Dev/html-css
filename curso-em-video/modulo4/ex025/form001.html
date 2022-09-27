@@ -9,20 +9,17 @@
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
-        body{
-            background-color: black;
-            color:white;
-        }
     </style>
 </head>
 <body>
     <h1>Meu Primeiro Formulario</h1>
-    <form action="cadastro.php" autocomplete="off"></form>
+    <form action="cadastro.php" mathod="POST" autocomplete="off"></form>
         <p><label for="inome">Nome: </label>
             <input type="text" name="nome" id="inome"></p>
 
         <p><label for="isobrenome">Sobrenome:</label> 
             <input type="text" name="sobrenome" id="isobrenome"></p>
+            
         <p><input type="submit" Value="Enviar"></p>
     </form>
 </body>
