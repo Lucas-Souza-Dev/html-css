@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sxmas" checked> <label for="sxmas">Masculino</label>
+            <!-- Utilizando o type="radio" temos que utilizar o mesmo name para que possamos marcar uma única opção-->
+            <input type="radio" name="sexo" id="sxfem"> <label for="sxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="basquete" id="bas" checked> <label for="bas">Basquete</label><br>
+            <input type="checkbox" name="futebol" id="fut"> <label for="fut">Futebol</label><br>
+            <input type="checkbox" name="natacao" id="nat"> <label for="nat">Natação</label><br>
+            <input type="checkbox" name="tenis" id="ten"> <label for="ten">Tenis</label>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
