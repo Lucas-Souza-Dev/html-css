@@ -19,10 +19,32 @@
                 </optgroup>
 
                 <optgroup label="Região Nordeste">
-
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
                 </optgroup>
             </select>
         </p>
+
+        <p>
+            
+                <label for="lstprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option value="dev">Desenvolvedor</option>
+                        <option value="med">Medico</option>
+                        <option value="des">Designer</option>
+                        <option value="profe">Professor</option>
+                    </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="img" cols="30" rows="10"></textarea>
+        </p>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
     </form>
 </body>
 </html>
