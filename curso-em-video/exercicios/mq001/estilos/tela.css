@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-color: rgb(190, 188, 188);
+}
+
+header > h1{
+    text-align: center;
+}
+
+menu ul{
+    list-style-type: none;/* Tira os marcadores da lista */
+    background-color: gray;
+}
+
+menu li{
+    background-color: rgb(99, 99, 99);
+    color: white;
+    display: inline-block;/* Deixa os itens da lista um ao lado do outro */
+    padding: 10px;
+}
+
+article{
+    width: 600px;
+    display: block;/* Faz com que altere o tipo da caixa do texto */
+    margin: auto;
+}
